@@ -1,0 +1,87 @@
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+
+$tabwidth: 600px;
+$midwidth: 900px;
+$deskwidth: 1200px;
+
+.wrapper {
+	width: 100%;
+	margin: 0px auto;
+	padding: 0 5%;
+	
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+		
+	}
+}
+
+.content-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 66%;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+.widget-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 26%;
+		float: right;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+/* Logo */
+.logo , h1.logo {
+	width: 325px;
+	height: 102px;
+	background-image: url(images/logo.png);	
+	margin: 10px auto;
+
+	@media screen and (min-width: $tabwidth) {
+		width: 325px;
+		height: 102px;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+.logo a, h1.logo a {
+	width: 325px;
+	height: 102px;
+	display: block;
+	text-indent: -9000px;
+
+	@media screen and (min-width: $tabwidth) {
+		width: 325px;
+		height: 102px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+footer {
+	width: 100%;
+	clear: both;
+	@media screen and (min-width: $tabwidth) {
+
+	}
+}
