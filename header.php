@@ -37,6 +37,28 @@
 	            </div>
 	        <?php } ?>
 
+	        <nav id="quicknav">
+	        	<?php wp_nav_menu( array( 'theme_location' => 'header', 'menu_id' => 'primary-menu' ) ); ?>
+	        </nav>
+
+	        <div class="hours-of-operation">
+	        	<div class="left">Hours of Operation</div>
+	        	<div class="right">
+	        		<?php if(have_rows()) : while(have_rows()) : the_row(); 
+
+	        		$day = get_sub_field('day', 'option');
+	        		$hour = get_sub_field('hour', 'option');
+
+	        		?>
+	        		<div class="day-row">
+	        			<div class="day"><?php echo $day; ?></div>
+	        			<div class="hour"><?php echo $hour; ?></div>
+	        		</div>
+
+	        	<?php endwhile; endif; ?>
+	        	</div><!-- right -->
+	        </div><!-- hours-of-operation -->
+
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'acstarter' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

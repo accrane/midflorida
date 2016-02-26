@@ -2728,11 +2728,16 @@ a {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+ul#primary-menu {
+  width: 100%;
+  text-align: center; }
+
 .main-navigation {
   clear: both;
   display: block;
   float: left;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -2756,11 +2761,17 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
-    position: relative; }
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    border-right: 1px solid #e31d19; }
+    .main-navigation li.last {
+      border-right: 0 solid #e31d19; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 0 20px;
+    color: #000; }
 
 /* Small menu. */
 .menu-toggle,
