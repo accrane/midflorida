@@ -23,35 +23,37 @@ jQuery(document).ready(function ($) {
 	*	Flexslider
 	*
 	------------------------------------*/
-	$('.flexslider').flexslider({
-		animation: "slide",
-	}); // end register flexslider
+	 // The slider being synced must be initialized first
+  $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails"
+  });
 	
 	/*
 	*
 	*	Colorbox
 	*
 	------------------------------------*/
-	$('a.gallery').colorbox({
-		rel:'gal',
-		width: '80%', 
-		height: '80%'
-	});
+	// $('a.gallery').colorbox({
+	// 	rel:'gal',
+	// 	width: '80%', 
+	// 	height: '80%'
+	// });
 	
 	/*
 	*
 	*	Isotope with Images Loaded
 	*
 	------------------------------------*/
-	var $container = $('#container').imagesLoaded( function() {
-  	$container.isotope({
-    // options
-	 itemSelector: '.item',
-		  masonry: {
-			gutter: 15
-			}
- 		 });
-	});
+	// var $container = $('#container').imagesLoaded( function() {
+ //  	$container.isotope({
+ //    // options
+	//  itemSelector: '.item',
+	// 	  masonry: {
+	// 		gutter: 15
+	// 		}
+ // 		 });
+	// });
 
 	/*
 	*
@@ -70,9 +72,9 @@ jQuery(document).ready(function ($) {
 	*	Nice Page Scroll
 	*
 	------------------------------------*/
-	$(function(){	
-		$("html").niceScroll();
-	});
+	// $(function(){	
+	// 	$("html").niceScroll();
+	// });
 	
 	
 	/*

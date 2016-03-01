@@ -16,9 +16,21 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="wrapper">
 			<div class="site-info">
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'acstarter' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'acstarter' ), 'WordPress' ); ?></a>
-				<span class="sep"> | </span>
-				<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'acstarter' ), 'acstarter', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+				<?php 
+				$phone = get_field('phone', 'option');
+				$address = get_field('address', 'option');
+				$city_state_zip = get_field('city_state_zip', 'option');
+				$sitemap = get_field('sitemap_link', 'option');
+				$bella = 'http://bellaworksweb.com/?r=midflorida';
+
+				echo '<div class="footer-address">';
+				echo $address . ' | ' . $city_state_zip . ' | ' . $phone;
+				echo '</div>';
+
+				echo '<div class="footer-cred">';
+				echo '<a href="'.$sitemap.'">Sitemap</a> | Site by <a href="'.$bella.'">Bellaworks</a>';
+				echo '</div>';
+				 ?>
 			</div><!-- .site-info -->
 	</div><!-- wrapper -->
 	</footer><!-- #colophon -->

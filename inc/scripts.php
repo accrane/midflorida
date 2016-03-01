@@ -9,12 +9,15 @@ function acstarter_scripts() {
 		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', false, '1.10.2', true);
 		wp_enqueue_script('jquery');
 
-	wp_enqueue_script( 
-			'acstarter-custom', 
-			get_template_directory_uri() . '/js/custom.js', 
-			array(), '20120206', 
-			true 
-		);
+	
+
+
+	// wp_enqueue_script( 
+	// 		'nicescroll', 
+	// 		get_template_directory_uri() . '/js/nicescroll.min.js', 
+	// 		array(), '20120206', 
+	// 		true 
+	// 	);
 
 	wp_enqueue_script( 
 			'acstarter-blocks', 
@@ -30,26 +33,26 @@ function acstarter_scripts() {
 			true 
 		);
 
-	wp_enqueue_script( 
-			'acstarter-colorbox', 
-			get_template_directory_uri() . '/js/colorbox.js', 
-			array(), '20120206', 
-			true 
-		);
+	// wp_enqueue_script( 
+	// 		'acstarter-colorbox', 
+	// 		get_template_directory_uri() . '/js/colorbox.js', 
+	// 		array(), '20120206', 
+	// 		true 
+	// 	);
 
-	wp_enqueue_script( 
-			'acstarter-isotope', 
-			get_template_directory_uri() . '/js/isotope.js', 
-			array(), '20120206', 
-			true 
-		);
+	// wp_enqueue_script( 
+	// 		'acstarter-isotope', 
+	// 		get_template_directory_uri() . '/js/isotope.js', 
+	// 		array(), '20120206', 
+	// 		true 
+	// 	);
 
-	wp_enqueue_script( 
-			'acstarter-images-loaded', 
-			get_template_directory_uri() . '/js/images-loaded.js', 
-			array(), '20120206', 
-			true 
-		);
+	// wp_enqueue_script( 
+	// 		'acstarter-images-loaded', 
+	// 		get_template_directory_uri() . '/js/images-loaded.js', 
+	// 		array(), '20120206', 
+	// 		true 
+	// 	);
 
 
 	wp_enqueue_script( 
@@ -59,13 +62,7 @@ function acstarter_scripts() {
 			true 
 		);
 
-	wp_enqueue_script( 
-			'nicescroll', 
-			get_template_directory_uri() . '/js/nicescroll.min.js', 
-			array(), '20120206', 
-			true 
-		);
-
+	
 	wp_enqueue_script( 
 			'wow', 
 			get_template_directory_uri() . '/js/wow.js', 
@@ -79,6 +76,15 @@ function acstarter_scripts() {
 			array(), '20130115', 
 			true 
 		);
+
+	wp_enqueue_script( 
+			'acstarter-custom', 
+			get_template_directory_uri() . '/js/custom.js', 
+			array(), '20120206', 
+			true 
+		);
+
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

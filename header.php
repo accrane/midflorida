@@ -37,27 +37,35 @@
 	            </div>
 	        <?php } ?>
 
-	        <nav id="quicknav">
-	        	<?php wp_nav_menu( array( 'theme_location' => 'header', 'menu_id' => 'primary-menu' ) ); ?>
-	        </nav>
+	        <div class="header-right-info">
 
-	        <div class="hours-of-operation">
-	        	<div class="left">Hours of Operation</div>
-	        	<div class="right">
-	        		<?php if(have_rows()) : while(have_rows()) : the_row(); 
+		        <div class="phone">
+		        	<?php the_field('phone', 'option'); ?>
+		        </div>
 
-	        		$day = get_sub_field('day', 'option');
-	        		$hour = get_sub_field('hour', 'option');
+		        <nav id="quicknav">
+		        	<?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
+		        </nav>
 
-	        		?>
-	        		<div class="day-row">
-	        			<div class="day"><?php echo $day; ?></div>
-	        			<div class="hour"><?php echo $hour; ?></div>
-	        		</div>
+				<div class="hours-of-operation">
+		        	<div class="left">Hours of Operation</div>
+		        	<div class="right">
+		        		<?php if(have_rows('hours', 'option')) : while(have_rows('hours', 'option')) : the_row(); 
 
-	        	<?php endwhile; endif; ?>
-	        	</div><!-- right -->
-	        </div><!-- hours-of-operation -->
+		        		$day = get_sub_field('Day', 'option');
+		        		$hour = get_sub_field('hour', 'option');
+
+		        		?>
+		        		<div class="day-row">
+		        			<div class="day"><?php echo $day; ?></div>
+		        			<div class="hour"><?php echo $hour; ?></div>
+		        		</div>
+
+		        	<?php endwhile; endif; ?>
+		        	</div><!-- right -->
+		        </div><!-- hours-of-operation -->
+
+		    </div><!-- header right -->
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'acstarter' ); ?></button>
@@ -66,4 +74,4 @@
 	</div><!-- wrapper -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content wrapper">
+	<div id="content" class="site-content">
