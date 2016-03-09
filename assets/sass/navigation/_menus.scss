@@ -1,0 +1,205 @@
+ul#primary-menu {
+	// width: 100%;
+	// text-align: center;
+	// margin: 40px 0 10px 0;
+	display: flex;
+    justify-content: space-between;
+}
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin: 30px 0 10px 0;
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 1.5em;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+	li {
+		display: inline-block;
+		position: relative;
+		text-transform: uppercase;
+		border-right: 1px solid $color-red;
+		font-size: 16px;
+		@media screen and (min-width: $tabwidth) {
+			font-size: 12px;
+		}
+		@media screen and (min-width: $midwidth) {
+			font-size: 13px;
+		}
+		@media screen and (min-width: $largetabwidth) {
+			font-size: 14px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 16px;
+		}
+		@media screen and (min-width: $largewidth) {
+
+		}
+		&.last {
+			border-right: 0 solid $color-red;
+		}
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+	a {
+		display: block;
+		text-decoration: none;
+		padding: 0 10px;
+		color: #000;
+		@media screen and (min-width: $tabwidth) {
+			padding: 0 5px;
+		}
+		@media screen and (min-width: $midwidth) {
+			padding: 0 5px;
+		}
+		@media screen and (min-width: $largetabwidth) {
+			padding: 0 10px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			padding: 0 12px;
+		}
+		@media screen and (min-width: $largewidth) {
+			padding: 0 20px;
+		}
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: $midwidth) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
+nav#quicknav {
+	width: 100%;
+	display: inline-block;
+
+	ul {
+		margin: 0;
+	}
+	.menu-header-menu-container {
+		ul.menu {
+			margin: 0;
+			width: 100%;
+			float: left;
+			padding: 0;
+		}
+	}
+	
+
+	li {
+		width: auto; 
+		display: inline-block;
+		margin: 0;
+		@media screen and (min-width: $tabwidth) {
+			float: right;
+
+		}
+		@media screen and (min-width: $midwidth) {
+			float: right;
+		}
+	}
+
+	a {
+		color: $color-red;
+		padding: 5px 10px 5px 10px;
+		@include transition(all 0.3s ease);
+		text-decoration: none;
+		@media screen and (min-width: $tabwidth) {
+			padding: 5px 0 5px 25px;
+		}
+		@media screen and (min-width: $midwidth) {
+			padding: 5px 0 5px 25px;
+		}
+		&:hover {
+			color: $color-blue;
+		}
+
+	}
+
+	@media screen and (min-width: $midwidth) {
+		float: left;
+		width: 45%;
+	}
+
+}

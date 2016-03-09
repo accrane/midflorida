@@ -1,0 +1,140 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+.border {
+	width: 100%;
+	margin-top: 10px;
+	position: relative;
+  	border-top: 2px solid #000;
+  	&:before {
+	  	width: 100%;
+	  	content: " ";
+		position: absolute;
+		z-index: -1;
+		top: 2px;
+		border: 1px solid #000;
+  	}
+}
+.products-page,
+.single-product-gallery
+ {
+	width: 100%;
+	padding-top: 30px;
+
+	.product {
+		width: 100%;
+		& img {
+			width: 100%;
+		}
+		
+		@media screen and (min-width: $tabwidth) {
+			width: 32.5%;
+		}
+
+		.heading  {
+			width: 100%;
+			padding: 5%;
+			background-color: #fff;
+			position: relative;
+			margin-bottom: 5px;
+			
+			h2 {
+				color: #000;
+				margin: 0;
+				font: {
+					size: 16px;
+					weight: 500;
+				}
+			}
+		}
+	}
+	.product-first {
+		margin: 20px auto;
+		float: left;
+
+		@media screen and (min-width: $tabwidth) {
+			margin: 0 .5% 0 0;
+		}
+	}
+	.product-last {
+		margin: 20px auto;
+		float: left;
+
+		@media screen and (min-width: $tabwidth) {
+			margin: 0 0% 0 0;
+		}
+	}
+}
+.single-product-side {
+	width: 90%;
+	margin: 0px auto;
+	padding: 5%;
+	background-color: $color-blue;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 33%;
+		float: right;
+		margin: 50px 0 0px 0;
+		padding: 2%;
+
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+
+}
+.single-product-list  {
+	width: 100%;
+	padding: 5%;
+	background-color: #fff;
+	position: relative;
+	margin-bottom: 5px;
+	
+	h2 {
+		color: #000;
+		margin: 0;
+		font: {
+			size: 16px;
+			weight: 500;
+		}
+	}
+}
+/**! Gallery */
+#gallery {
+	clear: both;
+}
+.item {
+	width: 100%;
+	@media screen and (min-width: $tabwidth) {
+		width: 31.333333%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 32.333333%;
+	}
+	
+}

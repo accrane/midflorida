@@ -3431,13 +3431,14 @@ html[xmlns] .flexslider .slides {
   width: 100%;
   float: left;
   margin: 0 0 20px 0;
-  border: 3px solid #fff; }
+  border: 3px solid #fff;
+  background-color: #111e66; }
 
 .flex-control-thumbs img {
   width: 100%;
   height: auto;
   display: block;
-  opacity: .7;
+  opacity: 1;
   cursor: pointer;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -3449,7 +3450,7 @@ html[xmlns] .flexslider .slides {
   opacity: 1; }
 
 .flex-control-thumbs .flex-active {
-  opacity: 1;
+  opacity: .6;
   cursor: default; }
 
 /* ====================================================================================================================

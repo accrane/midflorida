@@ -1,0 +1,113 @@
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+
+$tabwidth: 600px;
+$midwidth: 930px;
+$largetabwidth: 1060px;
+$deskwidth: 1200px;
+$largewidth: 1300px;
+
+
+.wrapper {
+	width: 100%;
+	margin: 0px auto;
+	padding: 0 5%;
+	
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+		
+	}
+}
+
+.content-area {
+	width: 100%;
+	margin: 0px auto;
+	overflow: hidden;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 60%;
+		float: left;
+		margin: 0;
+
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+		padding: 0 20px;
+	}
+}
+.content-area-full {
+	width: 100%;
+	margin: 0px auto;
+	overflow: hidden;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: auto;
+		float: left;
+		margin: 0;
+
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+		padding: 0 20px;
+	}
+}
+
+.widget-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 33%;
+		float: right;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+		padding-right: 20px;
+	}
+}
+
+/* Logo */
+.logo , h1.logo {
+	width: 280px;
+	height: 88px;	
+	background: {
+		image: url(images/logo.png);
+		size: cover;
+		repeat: no-repeat;
+	}
+	margin: 10px auto;
+
+	@media screen and (min-width: $tabwidth) {
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 325px;
+		height: 102px;
+	}
+}
+.logo a, h1.logo a {
+	width: 280px;
+	height: 88px;
+	display: block;
+	text-indent: -9000px;
+
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 325px;
+		height: 102px;
+	}
+}
+footer {
+	width: 100%;
+	clear: both;
+	@media screen and (min-width: $tabwidth) {
+
+	}
+}

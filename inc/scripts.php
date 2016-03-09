@@ -7,9 +7,24 @@ function acstarter_scripts() {
 
 	wp_deregister_script('jquery');
 		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', false, '1.10.2', true);
-		wp_enqueue_script('jquery');
+		wp_enqueue_script(
+			'jquery'
 
-	
+		);
+
+	wp_enqueue_script( 
+			'acstarter-vendors', 
+			get_template_directory_uri() . '/assets/js/vendors.js', 
+			array(), '20120206', 
+			true 
+		);
+
+	wp_enqueue_script( 
+			'acstarter-custom', 
+			get_template_directory_uri() . '/assets/js/custom.js', 
+			array(), '20120206', 
+			true 
+		);
 
 
 	// wp_enqueue_script( 
@@ -19,19 +34,19 @@ function acstarter_scripts() {
 	// 		true 
 	// 	);
 
-	wp_enqueue_script( 
-			'acstarter-blocks', 
-			get_template_directory_uri() . '/js/blocks.js', 
-			array(), '20120206', 
-			true 
-		);
+	// wp_enqueue_script( 
+	// 		'acstarter-blocks', 
+	// 		get_template_directory_uri() . '/js/blocks.js', 
+	// 		array(), '20120206', 
+	// 		true 
+	// 	);
 
-	wp_enqueue_script( 
-			'acstarter-flexslider', 
-			get_template_directory_uri() . '/js/flexslider.js', 
-			array(), '20120206', 
-			true 
-		);
+	// wp_enqueue_script( 
+	// 		'acstarter-flexslider', 
+	// 		get_template_directory_uri() . '/js/flexslider.js', 
+	// 		array(), '20120206', 
+	// 		true 
+	// 	);
 
 	// wp_enqueue_script( 
 	// 		'acstarter-colorbox', 
@@ -55,34 +70,29 @@ function acstarter_scripts() {
 	// 	);
 
 
-	wp_enqueue_script( 
-			'acstarter-navigation', 
-			get_template_directory_uri() . '/js/navigation.js', 
-			array(), '20120206', 
-			true 
-		);
+	// wp_enqueue_script( 
+	// 		'acstarter-navigation', 
+	// 		get_template_directory_uri() . '/js/navigation.js', 
+	// 		array(), '20120206', 
+	// 		true 
+	// 	);
 
 	
-	wp_enqueue_script( 
-			'wow', 
-			get_template_directory_uri() . '/js/wow.js', 
-			array(), '20130115', 
-			true 
-		);
+	// wp_enqueue_script( 
+	// 		'wow', 
+	// 		get_template_directory_uri() . '/js/wow.js', 
+	// 		array(), '20130115', 
+	// 		true 
+	// 	);
 
-	wp_enqueue_script( 
-			'acstarter-skip-link-focus-fix', 
-			get_template_directory_uri() . '/js/skip-link-focus-fix.js', 
-			array(), '20130115', 
-			true 
-		);
+	// wp_enqueue_script( 
+	// 		'acstarter-skip-link-focus-fix', 
+	// 		get_template_directory_uri() . '/js/skip-link-focus-fix.js', 
+	// 		array(), '20130115', 
+	// 		true 
+	// 	);
 
-	wp_enqueue_script( 
-			'acstarter-custom', 
-			get_template_directory_uri() . '/js/custom.js', 
-			array(), '20120206', 
-			true 
-		);
+	
 
 
 

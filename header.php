@@ -74,4 +74,9 @@
 	</div><!-- wrapper -->
 	</header><!-- #masthead -->
 
+	<div class="wrapper">
+		<div class=" border"></div>
+	</div>
+	
+
 	<div id="content" class="site-content">
