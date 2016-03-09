@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Products
+ * Template Name: Services
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
