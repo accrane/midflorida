@@ -69,7 +69,7 @@ get_header(); ?>
 	foreach( $images as $image ):
 	?>	
 
-		<div class="item">
+		<div class="item item-product">
 			<a class="gallery" href="<?php echo $image['url']; ?>">
 	             <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
 	        </a>

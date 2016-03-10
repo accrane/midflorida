@@ -54,7 +54,22 @@ $largewidth: 1300px;
 		padding: 0 20px;
 	}
 }
+.single-service-area {
+	width: 100%;
+	margin: 0px auto;
+	overflow: hidden;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 40%;
+		float: left;
+		margin: 0;
 
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+		padding: 0 20px;
+	}
+}
 .widget-area {
 	width: 100%;
 	margin: 0px auto;

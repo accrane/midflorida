@@ -21,7 +21,25 @@
 .entry-summary {
 	margin: 1.5em 0 0;
 }
-
+.entry-content {
+	ul {
+		margin: 0 0 20px 20px;
+	}
+	li {
+		padding: 0 0 0 5px;
+		margin: 8px 0 ;
+		line-height: 1;
+		overflow: hidden;
+		border-left: {
+			style: solid;
+			width: 2px;
+			color: $color-red;
+		}
+		list: {
+			style: none;
+		}
+	}
+}
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
@@ -41,7 +59,8 @@
   	}
 }
 .products-page,
-.single-product-gallery
+.single-product-gallery,
+.single-service-list-area
  {
 	width: 100%;
 	padding-top: 30px;
@@ -62,13 +81,21 @@
 			background-color: #fff;
 			position: relative;
 			margin-bottom: 5px;
+			color: #000;
 			
 			h2 {
 				color: #000;
-				margin: 0;
+				margin: 0 0 15px 0;
 				font: {
 					size: 16px;
 					weight: 500;
+				}
+			}
+			p {
+				margin: 0;
+				font: {
+					size: 16px;
+					weight: 400;
 				}
 			}
 		}
@@ -87,6 +114,22 @@
 
 		@media screen and (min-width: $tabwidth) {
 			margin: 0 0% 0 0;
+		}
+	}
+	.service-first {
+		margin-bottom: 5px;
+		@media screen and (min-width: $tabwidth) {
+			width: 48%;
+			margin-bottom: 5px;
+			float: left;
+		}
+	}
+	.service-last {
+		margin-bottom: 5px;
+		@media screen and (min-width: $tabwidth) {
+			width: 48%;
+			margin-bottom: 5px;
+			float: right;
 		}
 	}
 }
@@ -124,17 +167,91 @@
 		}
 	}
 }
+.single-service-side {
+	width: 90%;
+	margin: 0px auto;
+	
+	position: relative;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 50%;
+		float: right;
+		margin: 50px 0 0px 0;
+		padding: 2%;
+
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+
+}
+.single-service-list  {
+	width: 100%;
+	color: #000;
+	background-color: #fff;
+	position: relative;
+	
+	
+	
+	h2 {
+		color: #000;
+		margin: 0;
+		font: {
+			size: 16px;
+			weight: 500;
+		}
+	}
+
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+}
+.single-service-thumb {
+	width: 30%;
+	float: left;
+	line-height: 0;
+
+	& img {
+		width: 100%;
+		line-height: 0;
+	}
+}
+.single-service-right {
+	width: 70%;
+	float: right;
+	padding: 3% 0 0 3%;
+}
 /**! Gallery */
 #gallery {
 	clear: both;
 }
-.item {
+// .item {
+// 	width: 100%;
+// 	@media screen and (min-width: $tabwidth) {
+// 		width: 31.333333%;
+// 	}
+// 	@media screen and (min-width: $deskwidth) {
+// 		width: 32.333333%;
+// 	}
+//}
+
+.item-product {
 	width: 100%;
 	@media screen and (min-width: $tabwidth) {
 		width: 31.333333%;
 	}
 	@media screen and (min-width: $deskwidth) {
 		width: 32.333333%;
+	}
+	
+}
+.item-service {
+	width: 100%;
+	@media screen and (min-width: $tabwidth) {
+		width: 48%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		//width: 32.333333%;
 	}
 	
 }

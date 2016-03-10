@@ -107,18 +107,22 @@ get_header(); ?>
 
 			<?php endwhile; endif; ?>
 		</div><!-- homenews -->
-<?php 
-// Query Homepage
-$querySlides = array(
-	'post_type' => 'page',
-	'page_id' => '61'
-);
-// The Query
-$the_query = new WP_Query( $querySlides );
-?>
-<?php  
-// The Loop
-if ( $the_query->have_posts()) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+		
+
+		<?php 
+		// Query Homepage
+		$querySlides = array(
+			'post_type' => 'page',
+			'page_id' => '61'
+		);
+		// The Query
+		$the_query = new WP_Query( $querySlides );
+		?>
+		<?php  
+		// The Loop
+		if ( $the_query->have_posts()) : 
+			while ( $the_query->have_posts() ) : 
+				$the_query->the_post(); ?>
 
 
 		<div class="home-help wow zoomIn" data-wow-duration=".5s">
@@ -136,6 +140,7 @@ if ( $the_query->have_posts()) : while ( $the_query->have_posts() ) : $the_query
 
             	$linkText = get_sub_field('link_text');
             	$pageLink = get_sub_field('page_link');
+            	$permalink = get_the_permalink( $pageLink->ID );
 
             	// echo '<pre>';
             	// print_r($pageLink);
@@ -153,7 +158,7 @@ if ( $the_query->have_posts()) : while ( $the_query->have_posts() ) : $the_query
 			 			?>
 			 		</div><!-- link -->
 			 		<div class="quick-readmore">
-			 			<a href="<?php echo $pageLink->permalink; ?>">READ MORE</a>
+			 			<a href="<?php echo $permalink ?>">READ MORE</a>
 			 		</div>
 			 	</article>
 

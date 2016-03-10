@@ -57,6 +57,8 @@ get_header(); ?>
 					$width = $image['sizes'][ $size . '-width' ];
 					$height = $image['sizes'][ $size . '-height' ];
 
+					$shortDesc = get_field('short_description'); 
+
 
 			    ?>	
 
@@ -64,6 +66,7 @@ get_header(); ?>
 			    <div class="product <?php echo $class; ?>">
 			    	<div class="heading">
 			    		<h2><?php the_title(); ?></h2>
+			    		<?php echo $shortDesc; ?>
 			    		<div class="quick-readmore">
 			    			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 			    		</div>

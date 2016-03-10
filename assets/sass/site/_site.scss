@@ -183,6 +183,12 @@ section.blue {
 	color: #fff;
 	margin: 20px auto;
 	padding-bottom: 30px;
+	h2 {
+		font: {
+			size: 24px;
+			weight: 400;
+		}
+	}
 	@media screen and (min-width: $tabwidth) {
 		margin: 40px auto 0 auto;
 	}
@@ -287,7 +293,7 @@ article.white-box {
 	background: {
 		image: url(images/red-arrow.png);
 		repeat: no-repeat;
-		position: right 15px top 20px;
+		position: right 15px bottom 20px;
 	}
 	font: {
 		weight: 500;
@@ -303,7 +309,7 @@ article.white-box {
 	}
 	&:hover {
 			background: {
-				position: right 5px top 20px;
+				position: right 5px bottom 20px;
 			}
 		}
 }
