@@ -7,6 +7,12 @@
  * @package ACStarter
  */
 
+
+/*-------------------------------------
+  Images Sizes
+---------------------------------------*/
+//add_image_size( 'pagelinks', 600, 999, array( 'center', 'center' ) );
+
 /*-------------------------------------
 	Custom client login, link and title.
 ---------------------------------------*/
