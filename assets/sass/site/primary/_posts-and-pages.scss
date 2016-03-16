@@ -255,3 +255,71 @@
 	}
 	
 }
+article.white-news {
+	background-color: rgba(255,255,255,1);
+	width: 94%;
+	padding: 3%;
+	position: relative;
+	margin-bottom: 20px;
+	color: #000;
+	
+	h3 {
+		margin: 0 0 20px 0;
+		text-transform: uppercase;
+		font: {
+			weight: 500;
+			size: 16px;
+		}
+	}
+
+	.link {
+		margin: 0;
+		font: {
+			weight: 400;
+			size: 16px;
+		}
+	}
+
+	@media screen and (min-width: $tabwidth) {
+		width: 48%;
+	}
+}
+.news-left {
+	float: left;
+}
+.news-right {
+	float: right;
+}
+
+.archive-list  {
+	
+
+	a {
+		width: 100%;
+		padding: 5%;
+		background-color: #fff;
+		position: relative;
+		margin-bottom: 5px;
+		display: block;
+		@include transition(all ease .3s);
+		background: {
+			image: url(images/red-arrow.png);
+			repeat: no-repeat;
+			position: right 15px bottom 20px;
+			}
+		&:hover {
+			background: {
+				position: right 5px bottom 20px;
+			}
+		}
+	}
+	
+	h2 {
+		color: #000;
+		margin: 0;
+		font: {
+			size: 16px;
+			weight: 500;
+		}
+	}
+}

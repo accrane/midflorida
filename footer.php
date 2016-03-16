@@ -23,6 +23,7 @@
 				$sitemap = get_field('sitemap_link', 'option');
 				$bella = 'http://bellaworksweb.com/?r=midflorida';
 
+				echo '<div class="footer-logo"><a href="'. get_bloginfo('url') . '">'. get_bloginfo('name') . '</a></div>';
 				echo '<div class="footer-address">';
 				echo $address . ' | ' . $city_state_zip . ' | ' . $phone;
 				echo '</div>';

@@ -64,7 +64,7 @@ get_header(); ?>
 
 
 			    <div class="product <?php echo $class; ?>">
-			    	<div class="heading">
+			    	<div class="heading js-blocks">
 			    		<h2><?php the_title(); ?></h2>
 			    		<?php echo $shortDesc; ?>
 			    		<div class="quick-readmore">

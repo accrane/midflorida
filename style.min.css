@@ -20,16 +20,16 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */@import url(https://fonts.googleapis.com/css?family=Hind:400,500,700);.wrapper{width:100%;margin:0 auto;padding:0 5%}
 .content-area{width:100%;margin:0 auto;overflow:hidden}
-@media screen and (min-width:600px){.content-area{width:60%;float:left;margin:0}
+@media screen and (min-width:600px){.content-area{width:60%;float:left;margin:30px 0}
 }@media screen and (min-width:1200px){.content-area{padding:0 20px}
 }.content-area-full{width:100%;margin:0 auto;overflow:hidden}
-@media screen and (min-width:600px){.content-area-full{width:auto;float:left;margin:0}
+@media screen and (min-width:600px){.content-area-full{width:auto;float:left;margin:30px 0}
 }@media screen and (min-width:1200px){.content-area-full{padding:0 20px}
 }.single-service-area{width:100%;margin:0 auto;overflow:hidden}
-@media screen and (min-width:600px){.single-service-area{width:40%;float:left;margin:0}
+@media screen and (min-width:600px){.single-service-area{width:40%;float:left;margin:30px 0}
 }@media screen and (min-width:1200px){.single-service-area{padding:0 20px}
 }.widget-area{width:100%;margin:0 auto}
-@media screen and (min-width:600px){.widget-area{width:33%;float:right;margin:0}
+@media screen and (min-width:600px){.widget-area{width:33%;float:right;margin:70px 0 30px 0}
 }@media screen and (min-width:1200px){.widget-area{padding-right:20px}
 }.logo,h1.logo{width:280px;height:88px;background-image:url(images/logo.png);background-size:cover;background-repeat:no-repeat;margin:10px auto}
 @media screen and (min-width:600px){.logo,h1.logo{float:left;margin:0}
@@ -37,6 +37,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }.logo a,h1.logo a{width:280px;height:88px;display:block;text-indent:-9000px}
 @media screen and (min-width:1200px){.logo a,h1.logo a{width:325px;height:102px}
 }footer{width:100%;clear:both}
+.footer-logo{width:30px;height:30px;background-image:url(images/footer-logo.png);background-size:cover;background-repeat:no-repeat;margin:10px auto}
+@media screen and (min-width:600px){.footer-logo{float:left;margin:-8px 20px 0 0}
+}.footer-logo a{width:30px;height:30px;display:block;text-indent:-9000px}
 /*! animate.css -http://daneden.me/animate Version - 3.5.0 Licensed under the MIT license - http://opensource.org/licenses/MIT Copyright (c) 2016 Daniel Eden */.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}
 .animated.hinge{-webkit-animation-duration:2s;animation-duration:2s}
@@ -675,11 +678,12 @@ nav#quicknav li{width:auto;display:inline-block;margin:0}
 }@media screen and (min-width:930px){nav#quicknav a{padding:5px 0 5px 25px}
 }nav#quicknav a:hover{color:#111e66}
 @media screen and (min-width:930px){nav#quicknav{float:left;width:45%}
-}.pagi{bottom:-50px;left:125px;position:absolute}
+}.navigation{width:100%;margin:20px 0 30px 0;clear:both;float:left}
+.navigation ul{margin:0;padding:0}
+.navigation li{margin:0;display:inline;list-style:none}
 .navigation li a,.navigation li a:hover,.navigation li.active a,.navigation li.disabled{color:#fff;text-decoration:none}
-.navigation li{display:inline}
-.navigation li a,.navigation li a:hover,.navigation li.active a,.navigation li.disabled{background-color:#fad827;border-radius:3px;cursor:pointer;padding:12px;padding:.75rem}
-.navigation li a:hover,.navigation li.active a{background-color:#f47a21}
+.navigation li a,.navigation li a:hover,.navigation li.active a,.navigation li.disabled{background-color:#fff;border-radius:3px;cursor:pointer;padding:12px;padding:.75rem;-webkit-transition:.3s ease all;transition:.3s ease all;color:#111e66}
+.navigation li a:hover,.navigation li.active a{background-color:#e31d19;color:#fff}
 .screen-reader-text{clip:rect(1px,1px,1px,1px);position:absolute !important;height:1px;width:1px;overflow:hidden}
 .screen-reader-text:focus{background-color:#f1f1f1;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto !important;color:#21759b;display:block;font-size:14px;font-size:.875rem;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
 #content[tabindex="-1"]:focus{outline:0}
@@ -771,8 +775,14 @@ html[xmlns] .flexslider .slides{display:block}
 .flex-control-thumbs .flex-active{opacity:.6;cursor:default}
 @media screen and (max-width:860px){.flex-direction-nav .flex-prev{opacity:1;left:10px}
 .flex-direction-nav .flex-next{opacity:1;right:10px}
-}.widget{margin:0 0 1.5em}
+}.widget{width:100%;position:relative;margin:0 0 30px 0;background-color:#111e66;padding:2%}
 .widget select{max-width:100%}
+.video{width:100%;position:relative;margin:0 0 30px 0;background-color:#111e66;padding:2%}
+.video iframe{width:100%}
+@media screen and (min-width:600px){.video iframe{min-height:130px}
+}@media screen and (min-width:930px){.video iframe{min-height:170px}
+}@media screen and (min-width:1200px){.video iframe{min-height:250px}
+}.video h3{margin:10px 0 10px 0;color:#fff;font-size:20px;font-weight:400}
 .sticky{display:block}
 .hentry{margin:0 0 1.5em}
 .byline,.updated:not(.published){display:none}
@@ -817,7 +827,16 @@ html[xmlns] .flexslider .slides{display:block}
 }@media screen and (min-width:1200px){.item-product{width:32.333333%}
 }.item-service{width:100%}
 @media screen and (min-width:600px){.item-service{width:48%}
-}.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
+}article.white-news{background-color:white;width:94%;padding:3%;position:relative;margin-bottom:20px;color:#000}
+article.white-news h3{margin:0 0 20px 0;text-transform:uppercase;font-weight:500;font-size:16px}
+article.white-news .link{margin:0;font-weight:400;font-size:16px}
+@media screen and (min-width:600px){article.white-news{width:48%}
+}.news-left{float:left}
+.news-right{float:right}
+.archive-list a{width:100%;padding:5%;background-color:#fff;position:relative;margin-bottom:5px;display:block;-webkit-transition:all ease .3s;transition:all ease .3s;background-image:url(images/red-arrow.png);background-repeat:no-repeat;background-position:right 15px bottom 20px}
+.archive-list a:hover{background-position:right 5px bottom 20px}
+.archive-list h2{color:#000;margin:0;font-size:16px;font-weight:500}
+.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
 header#masthead{border-top:4px solid #000;padding:20px 0 0 0;overflow:hidden}

@@ -30,7 +30,7 @@ $largewidth: 1300px;
 	@media screen and (min-width: $tabwidth) {
 		width: 60%;
 		float: left;
-		margin: 0;
+		margin: 30px 0;
 
 	}
 	@media screen and (min-width: $deskwidth) {
@@ -46,7 +46,7 @@ $largewidth: 1300px;
 	@media screen and (min-width: $tabwidth) {
 		width: auto;
 		float: left;
-		margin: 0;
+		margin: 30px 0;
 
 	}
 	@media screen and (min-width: $deskwidth) {
@@ -62,7 +62,7 @@ $largewidth: 1300px;
 	@media screen and (min-width: $tabwidth) {
 		width: 40%;
 		float: left;
-		margin: 0;
+		margin: 30px 0;
 
 	}
 	@media screen and (min-width: $deskwidth) {
@@ -77,7 +77,7 @@ $largewidth: 1300px;
 	@media screen and (min-width: $tabwidth) {
 		width: 33%;
 		float: right;
-		margin: 0;
+		margin:  70px 0 30px 0;
 	}
 	@media screen and (min-width: $deskwidth) {
 		/*width: 1200px;*/
@@ -124,5 +124,37 @@ footer {
 	clear: both;
 	@media screen and (min-width: $tabwidth) {
 
+	}
+}
+/* Logo */
+.footer-logo {
+	width: 30px;
+	height: 30px;	
+	background: {
+		image: url(images/footer-logo.png);
+		size: cover;
+		repeat: no-repeat;
+	}
+	margin: 10px auto;
+
+	@media screen and (min-width: $tabwidth) {
+		float: left;
+		margin: -8px 20px 0 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+}
+.footer-logo a {
+	width: 30px;
+	height: 30px;
+	display: block;
+	text-indent: -9000px;
+
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		
 	}
 }
