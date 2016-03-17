@@ -124,7 +124,7 @@ var reload       = browserSync.reload; // For manual browser reload.
 
  		// Inject CSS changes.
  		// Commnet it to reload browser for every CSS change.
- 		// injectChanges: true,
+ 		 injectChanges: true,
 
  		// Use a specific port (instead of the one auto-detected by Browsersync).
  		// port: 7000,
