@@ -2,8 +2,8 @@ ul#primary-menu {
 	// width: 100%;
 	// text-align: center;
 	// margin: 40px 0 10px 0;
-	display: flex;
-    justify-content: space-between;
+	// display: flex;
+ //    justify-content: space-between;
 }
 .main-navigation {
 	clear: both;
@@ -58,16 +58,21 @@ ul#primary-menu {
 		}
 	}
 	li {
+		width: 100%;
 		display: inline-block;
 		position: relative;
 		text-transform: uppercase;
-		border-right: 1px solid $color-red;
+		margin: 10px auto;
 		font-size: 16px;
 		@media screen and (min-width: $tabwidth) {
-			font-size: 12px;
+			font-size: 16px;
+			
 		}
 		@media screen and (min-width: $midwidth) {
 			font-size: 13px;
+			width: auto;
+			border-right: 1px solid $color-red;
+			margin: 0;
 		}
 		@media screen and (min-width: $largetabwidth) {
 			font-size: 14px;
@@ -119,7 +124,9 @@ ul#primary-menu {
 .main-navigation.toggled ul {
 	display: block;
 }
-
+.main-navigation.toggled ul {
+	padding-top: 20px;
+}
 @media screen and (min-width: $midwidth) {
 	.menu-toggle {
 		display: none;
@@ -151,7 +158,7 @@ ul#primary-menu {
 }
 
 nav#quicknav {
-	width: 100%;
+	width: auto;
 	display: inline-block;
 
 	ul {
@@ -202,4 +209,28 @@ nav#quicknav {
 		width: 45%;
 	}
 
+}
+
+.menu-toggle {
+	width: auto;
+	display: inline-block;
+	box-shadow: none;
+	background: #fff;
+	color: $color-blue;
+	padding: 20px 30px 30px 30px;
+	font-size: 20px;
+	background: {
+		image: url(images/menu-arrow.png);
+		repeat: no-repeat;
+		position: bottom 5px center;
+	}
+
+	&:hover, &.active {
+		box-shadow: none;
+		background: $color-blue;
+		color: #fff;
+	}
+	@media screen and (min-width: $midwidth) {
+		display: none;
+	}
 }

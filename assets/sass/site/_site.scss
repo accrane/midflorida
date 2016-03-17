@@ -23,10 +23,12 @@ header#masthead {
 .header-right-info {
 	width: auto;
 	overflow: hidden;
+	text-align: center;
 
 	@media screen and (min-width: $tabwidth) {
 		float: right;
 		width: 40%;
+		text-align: right;
 	}
 	@media screen and (min-width: $midwidth) {
 		float: right;
@@ -39,6 +41,8 @@ header#masthead {
 .phone {
 	width: 100%;
 	display: inline-block;
+	text-align: center;
+	margin: 20px auto;
 	font: {
 		weight: 700;
 		size: 18px;
@@ -58,6 +62,7 @@ header#masthead {
 	}
 	@media screen and (min-width: $tabwidth) {
 		text-align: right;
+		margin: 0;
 	}
 	@media screen and (min-width: $midwidth) {
 		float: right;
@@ -109,17 +114,22 @@ header#masthead {
 			}
 		}
 		.day {
-			width: auto;
+			width: 100%;
 			float: left;
 			font-weight: 700;
-			margin-right: 10px;
+			
 			text-align: center;
 			@media screen and (min-width: $tabwidth) {
+				width: auto;
 				text-align: right;
 				float: right;
+				margin-right: 0px;
+				margin-left: 10px;
 			}
 			@media screen and (min-width: $midwidth) {
 				float: left;
+				margin-right: 10px;
+				margin-left: 0px;
 			}
 		}
 		.hour {
@@ -149,8 +159,8 @@ box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.4);
 }
 .slidetext {
 	width: 90%;
-	position: absolute;
-	top: 20%;
+	position: relative;
+	float: left;
 	text-align: center;
 	color: #fff;
 	z-index: 10000;
@@ -161,7 +171,7 @@ box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.4);
 		z-index: 100000;
 		margin: 20px auto;
 		font: {
-			size: 45px;
+			size: 20px;
 			weight: 700;
 		}
 	}
@@ -169,9 +179,47 @@ box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.4);
 		position: relative;
 		z-index: 100000;
 		font: {
-			size: 30px;
+			size: 14px;
 			weight: 400;
 		}
+	}
+
+	@media screen and (min-width: $tabwidth) {
+		h2 {
+			font-size: 20px;
+		}
+		p {
+			font-size: 14x;
+		}
+	}
+	@media screen and (min-width: $midwidth) {
+		position: absolute;
+		top: 20%;
+		h2 {
+			font-size: 30px;
+		}
+		p {
+			font-size: 22x;
+		}
+	}
+	@media screen and (min-width: $largetabwidth) {
+		h2 {
+			font-size: 45px;
+		}
+		p {
+			font-size: 30x;
+		}
+	}
+	@media screen and (min-width: $deskwidth) {
+		h2 {
+			font-size: 45px;
+		}
+		p {
+			font-size: 30x;
+		}
+	}
+	@media screen and (min-width: $largewidth) {
+		
 	}
 }
 section.blue {

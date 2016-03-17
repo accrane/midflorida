@@ -214,11 +214,28 @@ html[xmlns] .flexslider .slides {
   content: '\f003';
 }
 .flex-control-nav {
-  width: 80px;
+  width: 30px;
   position: absolute;
   top: 20px;
   right: 20px;
   text-align: center;
+  display: none;
+  @media screen and (min-width: $tabwidth) {
+    width: 30px;
+    display: block;
+  }
+  @media screen and (min-width: $midwidth) {
+    width: 40px;
+  }
+  @media screen and (min-width: $largetabwidth) {
+    width: 45px;
+  }
+  @media screen and (min-width: $deskwidth) {
+    width: 80px;
+  }
+  @media screen and (min-width: $largewidth) {
+    
+  }
 }
 .flex-control-nav li {
   margin: 0 0 20px 0;
