@@ -195,7 +195,9 @@ get_header(); ?>
     ?>   
 
         <div class="home-logo wow zoomIn " data-wow-duration=".5s">
-	 		<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>" />
+        	<?php if($logoLink != '') {echo '<a href="' . $logoLink . '" target="_blank">';} ?>
+	 			<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>" />
+	 		<?php if($logoLink != '') {echo '</a>';} ?>
 	 	</div>
 
 	<?php endwhile; ?>
