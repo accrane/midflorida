@@ -77,7 +77,7 @@
 
 		.heading  {
 			width: 100%;
-			padding: 4%;
+			padding: 5%;
 			background-color: #fff;
 			position: relative;
 			margin-bottom: 5px;
@@ -101,6 +101,9 @@
 					size: 16px;
 					weight: 400;
 				}
+			}
+			@media screen and (min-width: $tabwidth) {
+				padding: 4%;
 			}
 		}
 	}
@@ -137,27 +140,7 @@
 		}
 	}
 }
-.single-product-side {
-	width: 90%;
-	margin: 0px auto;
-	padding: 5%;
-	background-color: $color-blue;
-	& li {
-		list-style: none;
-	}
-	
-	@media screen and (min-width: $tabwidth) {
-		width: 33%;
-		float: right;
-		margin: 50px 0 0px 0;
-		padding: 2%;
 
-	}
-	@media screen and (min-width: $deskwidth) {
-		/*width: 1200px;*/
-	}
-
-}
 .single-product-list  {
 	width: 100%;
 	padding: 4%;
@@ -299,40 +282,7 @@ article.white-news {
 	float: right;
 }
 
-.archive-list  {
-	
 
-	a {
-		width: 100%;
-		padding: 4%;
-		background-color: #fff;
-		position: relative;
-		margin-bottom: 5px;
-		display: block;
-		text-decoration: none;
-		color: #000;
-		@include transition(all ease .3s);
-		background: {
-			image: url(images/red-arrow.png);
-			repeat: no-repeat;
-			position: right 15px bottom 20px;
-			}
-		&:hover {
-			background: {
-				position: right 5px bottom 20px;
-			}
-		}
-	}
-	
-	h2 {
-		color: #000;
-		margin: 0;
-		font: {
-			size: 16px;
-			weight: 500;
-		}
-	}
-}
 // Locations
 
 .location-col {

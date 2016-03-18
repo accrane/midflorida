@@ -31,6 +31,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <div class="single-product-side">
+	<h3>Archives</h3>
 <?php $args = array(
 	'type'            => 'monthly',
 	'limit'           => '',

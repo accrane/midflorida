@@ -606,7 +606,7 @@ td,th{padding:0}
 body,button,input,select,textarea{color:#404040;font-family:"Hind",sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
 h1,h2,h3,h4,h5,h6{clear:both}
 .entry-content h1{font-size:22px}
-.entry-title{line-height:1}
+.entry-title{line-height:1.3}
 p{margin-bottom:1.5em}
 dfn,cite,em,i{font-style:italic}
 blockquote{margin:0 1.5em}
@@ -791,6 +791,16 @@ html[xmlns] .flexslider .slides{display:block}
 }@media screen and (min-width:930px){.video iframe{min-height:170px}
 }@media screen and (min-width:1200px){.video iframe{min-height:250px}
 }.video h3{margin:10px 0 10px 0;color:#fff;font-size:20px;font-weight:400}
+.single-product-side{width:90%;margin:0 auto;padding:5%;background-color:#111e66;color:#fff}
+.single-product-side li{list-style:none}
+.single-product-side h3{margin:0 0 20px 0;font-size:20px;font-weight:400}
+@media screen and (min-width:600px){.single-product-side{width:33%;float:right;margin:55px 0 0 0;padding:2%}
+}@media screen and (min-width:1200px){}
+.archive-list a{width:100%;padding:4%;background-color:#fff;position:relative;margin-bottom:5px;display:block;text-decoration:none;text-transform:uppercase;color:#000;-webkit-transition:all ease .3s;transition:all ease .3s;background-image:url(images/red-arrow.png);background-repeat:no-repeat;background-position:right 15px bottom 20px}
+.archive-list a:hover{background-position:right 5px bottom 20px}
+.archive-list h2{color:#000;margin:0;font-size:16px;font-weight:500}
+.right-image{width:100%;float:left;overflow:hidden;margin:0 0 20px 0}
+.right-image img{width:100%}
 .sticky{display:block}
 .hentry{margin:0 0 1.5em}
 .byline,.updated:not(.published){display:none}
@@ -805,11 +815,12 @@ html[xmlns] .flexslider .slides{display:block}
 .products-page .product,.single-product-gallery .product,.single-service-list-area .product{width:100%}
 .products-page .product img,.single-product-gallery .product img,.single-service-list-area .product img{width:100%}
 @media screen and (min-width:600px){.products-page .product,.single-product-gallery .product,.single-service-list-area .product{width:32.5%}
-}.products-page .product .heading,.single-product-gallery .product .heading,.single-service-list-area .product .heading{width:100%;padding:4%;background-color:#fff;position:relative;margin-bottom:5px;color:#000}
+}.products-page .product .heading,.single-product-gallery .product .heading,.single-service-list-area .product .heading{width:100%;padding:5%;background-color:#fff;position:relative;margin-bottom:5px;color:#000}
 .products-page .product .heading h2,.single-product-gallery .product .heading h2,.single-service-list-area .product .heading h2{color:#000;margin:0;font-size:16px;font-weight:500}
 .products-page .product .heading h2.services,.single-product-gallery .product .heading h2.services,.single-service-list-area .product .heading h2.services{margin:0 0 15px 0}
 .products-page .product .heading p,.single-product-gallery .product .heading p,.single-service-list-area .product .heading p{margin:0;font-size:16px;font-weight:400}
-.products-page .product-first,.single-product-gallery .product-first,.single-service-list-area .product-first{margin:20px auto;float:left}
+@media screen and (min-width:600px){.products-page .product .heading,.single-product-gallery .product .heading,.single-service-list-area .product .heading{padding:4%}
+}.products-page .product-first,.single-product-gallery .product-first,.single-service-list-area .product-first{margin:20px auto;float:left}
 @media screen and (min-width:600px){.products-page .product-first,.single-product-gallery .product-first,.single-service-list-area .product-first{margin:0 .5% 0 0}
 }.products-page .product-last,.single-product-gallery .product-last,.single-service-list-area .product-last{margin:20px auto;float:left}
 @media screen and (min-width:600px){.products-page .product-last,.single-product-gallery .product-last,.single-service-list-area .product-last{margin:0}
@@ -817,11 +828,7 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.products-page .service-first,.single-product-gallery .service-first,.single-service-list-area .service-first{width:48%;margin-bottom:5px;float:left}
 }.products-page .service-last,.single-product-gallery .service-last,.single-service-list-area .service-last{margin-bottom:5px}
 @media screen and (min-width:600px){.products-page .service-last,.single-product-gallery .service-last,.single-service-list-area .service-last{width:48%;margin-bottom:5px;float:right}
-}.single-product-side{width:90%;margin:0 auto;padding:5%;background-color:#111e66}
-.single-product-side li{list-style:none}
-@media screen and (min-width:600px){.single-product-side{width:33%;float:right;margin:50px 0 0 0;padding:2%}
-}@media screen and (min-width:1200px){}
-.single-product-list{width:100%;padding:4%;background-color:#fff;position:relative;margin-bottom:5px}
+}.single-product-list{width:100%;padding:4%;background-color:#fff;position:relative;margin-bottom:5px}
 .single-product-list h2{color:#000;margin:0;font-size:16px;font-weight:500}
 .single-service-side{width:90%;margin:0 auto;position:relative}
 @media screen and (min-width:600px){.single-service-side{width:50%;float:right;margin:50px 0 0 0;padding:2%}
@@ -843,9 +850,6 @@ article.white-news .link{margin:0;font-weight:400;font-size:16px}
 @media screen and (min-width:600px){article.white-news{width:48%}
 }.news-left{float:left}
 .news-right{float:right}
-.archive-list a{width:100%;padding:4%;background-color:#fff;position:relative;margin-bottom:5px;display:block;text-decoration:none;color:#000;-webkit-transition:all ease .3s;transition:all ease .3s;background-image:url(images/red-arrow.png);background-repeat:no-repeat;background-position:right 15px bottom 20px}
-.archive-list a:hover{background-position:right 5px bottom 20px}
-.archive-list h2{color:#000;margin:0;font-size:16px;font-weight:500}
 .location-col{width:100%}
 .location-col h2{font-weight:400;background-color:#fff;border-bottom:2px solid #111e66;padding:5%;line-height:1}
 @media screen and (min-width:600px){.location-col{width:29%;float:left}

@@ -39,3 +39,74 @@
 		}
 	}
 }
+.single-product-side {
+	width: 90%;
+	margin: 0px auto;
+	padding: 5%;
+	background-color: $color-blue;
+	color: #fff;
+	& li {
+		list-style: none;
+	}
+	& h3 {
+		margin: 0 0 20px 0;
+		font: {
+			size: 20px;
+			weight: 400;
+		}
+	}
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 33%;
+		float: right;
+		margin: 55px 0 0px 0;
+		padding: 2%;
+
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+
+}
+.archive-list  {
+	
+
+	a {
+		width: 100%;
+		padding: 4%;
+		background-color: #fff;
+		position: relative;
+		margin-bottom: 5px;
+		display: block;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #000;
+		@include transition(all ease .3s);
+		background: {
+			image: url(images/red-arrow.png);
+			repeat: no-repeat;
+			position: right 15px bottom 20px;
+			}
+		&:hover {
+			background: {
+				position: right 5px bottom 20px;
+			}
+		}
+	}
+	
+	h2 {
+		color: #000;
+		margin: 0;
+		font: {
+			size: 16px;
+			weight: 500;
+		}
+	}
+}
+.right-image {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	margin: 0 0 20px 0;
+	& img {width: 100%;}
+}
