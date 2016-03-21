@@ -18,7 +18,7 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'acstarter' ); ?></p>
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below in the Site Map.', 'acstarter' ); ?></p>
 
 					<?php wp_nav_menu( array( 'theme_location' => 'sitemap' ) ); ?>
 

@@ -29,7 +29,7 @@
 				echo '</div>';
 
 				echo '<div class="footer-cred">';
-				echo '<a href="'.$sitemap.'">Sitemap</a> | Site by <a href="'.$bella.'">Bellaworks</a>';
+				echo '<a href="'.$sitemap.'"  >Sitemap</a> | Site by <a target="_blank" href="'.$bella.'">Bellaworks</a>';
 				echo '</div>';
 				 ?>
 			</div><!-- .site-info -->
@@ -38,6 +38,6 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<?php get_field('google_analytics', 'option') ?>
 </body>
 </html>
