@@ -114,3 +114,15 @@ function change_post_object_label() {
     }
 add_action( 'init', 'change_post_object_label' );
 add_action( 'admin_menu', 'change_post_menu_label' );
+
+// customize embed settings
+function custom_youtube_settings($code){
+  if(strpos($code, 'youtu.be') !== false || strpos($code, 'youtube.com') !== false){
+    $return = preg_replace("@src=(['\"])?([^'\">\s]*)@", "src=$1$2&showinfo=0&rel=0&autohide=1", $code);
+    return $return;
+  }
+  return $code;
+}
+ 
+add_filter('embed_handler_html', 'custom_youtube_settings');
+add_filter('embed_oembed_html', 'custom_youtube_settings');

@@ -133,9 +133,10 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav a {
   text-decoration: none;
-  display: block;
+  // display: block;
+  display: none;
   width: 40px;
-  height: 40px;
+  height: 50px;
   margin: -20px 0 0;
   position: absolute;
   top: 50%;

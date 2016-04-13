@@ -16,7 +16,7 @@ get_header(); ?>
 			while ( have_posts() ) : the_post();
 
 			$page_content = get_field('page_content');
-
+			$rightContent = get_field('right_content');
 			?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -32,15 +32,30 @@ get_header(); ?>
 			<?php endwhile; // End of the loop.
 			?>
 
+			
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 
 <div class="widget-area">
-	<?php if(have_rows('videos')) : while(have_rows('videos')) : the_row(); 
+	<section class="blue-widget"><div class="entry-content"><?php echo $rightContent; ?></div></section>
+	
+</div><!-- widget area -->
 
+<div class="videos">
+<?php 
+$i=0;
+if(have_rows('videos')) : while(have_rows('videos')) : the_row(); $i++;
+
+if($i == 3) {
+	$class = 'video-last';
+	$i=0;
+} else {
+	$class = 'video-first';
+}
 	?>
-	<div class="video">
+	<div class="video <?php echo $class; ?>">
 		<?php 
 		$vidTitle = get_sub_field('video_title');
 		// get iframe HTML
@@ -52,9 +67,11 @@ get_header(); ?>
 
 		// add extra params to iframe src
 		$params = array(
-		    'controls'    => 0,
+		    'controls'    => 1,
 		    'hd'        => 1,
-		    'autohide'    => 1
+		    'autohide'    => 1,
+		    'showinfo' => 0,
+		    // 'modestbranding' => 0
 		);
 
 		$new_src = add_query_arg($params, $src);
@@ -77,8 +94,7 @@ get_header(); ?>
 		 ?>
 	</div>
 	<?php endwhile; endif; ?>
-</div><!-- widget area -->
-
+</div><!-- vidoes -->
 
 </div><!-- wrapper -->
 <?php get_footer(); ?>

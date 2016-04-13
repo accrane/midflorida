@@ -20,8 +20,11 @@ $largewidth: 1300px;
 		
 		
 	}
+	@media screen and (min-width: $largewidth) {
+		padding: 0 8%;
+		
+	}
 }
-
 .content-area {
 	width: 100%;
 	margin: 0px auto;
@@ -29,6 +32,22 @@ $largewidth: 1300px;
 	
 	@media screen and (min-width: $tabwidth) {
 		width: 60%;
+		float: left;
+		margin: 30px 0;
+
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+		padding: 0 20px;
+	}
+}
+.contact-area {
+	width: 100%;
+	margin: 0px auto;
+	overflow: hidden;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 40%;
 		float: left;
 		margin: 30px 0;
 
@@ -76,6 +95,20 @@ $largewidth: 1300px;
 	
 	@media screen and (min-width: $tabwidth) {
 		width: 33%;
+		float: right;
+		margin:  70px 0 30px 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+		padding-right: 20px;
+	}
+}
+.contact-widget-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 50%;
 		float: right;
 		margin:  70px 0 30px 0;
 	}

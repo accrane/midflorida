@@ -83,6 +83,11 @@ ul#primary-menu {
 		@media screen and (min-width: $largewidth) {
 
 		}
+		&.mobile {
+			@media screen and (min-width: $tabwidth) {
+				display: none;
+			}
+		}
 		&.last {
 			border-right: 0 solid $color-red;
 		}
@@ -108,7 +113,7 @@ ul#primary-menu {
 			padding: 0 12px;
 		}
 		@media screen and (min-width: $largewidth) {
-			padding: 0 20px;
+			padding: 0 12px;
 		}
 	}
 
@@ -159,7 +164,7 @@ ul#primary-menu {
 
 nav#quicknav {
 	width: auto;
-	display: inline-block;
+	display: none;
 
 	ul {
 		margin: 0;
@@ -185,6 +190,7 @@ nav#quicknav {
 		@media screen and (min-width: $midwidth) {
 			float: right;
 		}
+
 	}
 
 	a {
@@ -203,10 +209,13 @@ nav#quicknav {
 		}
 
 	}
-
+	@media screen and (min-width: $tabwidth) {
+		display: inline-block;
+	}
 	@media screen and (min-width: $midwidth) {
 		float: left;
 		width: 45%;
+		
 	}
 
 }

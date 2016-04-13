@@ -18,10 +18,9 @@
 		<?php
 			the_content();
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'acstarter' ),
-				'after'  => '</div>',
-			) );
+			if(is_page('sitemap')) :
+				wp_nav_menu( array( 'theme_location' => 'sitemap' ) );
+			endif;
 		?>
 	</div><!-- .entry-content -->
 

@@ -28,6 +28,7 @@ jQuery(document).ready(function ($) {
     animation: "slide",
     controlNav: "thumbnails",
     direction: "vertical", 
+    smoothHeight: true
   });
 	
 	/*

@@ -78,19 +78,25 @@ header#masthead {
 	font: {
 		size: 14px;
 	}
+	display: none;
 
 
 
 	@media screen and (min-width: $tabwidth) {
 		float: left;
+		display: inline-block;
 
 	}
 
 	.left {
 		width: 100%;
 		text-align: center;
+		font-size: 18px;
+		margin-bottom: 10px;
 		@media screen and (min-width: $tabwidth) {
 			text-align: right;
+			font-size: 14px;
+			margin-bottom: 0px;
 		}
 		@media screen and (min-width: $midwidth) {
 			width: 45%;
@@ -109,8 +115,10 @@ header#masthead {
 			width: 100%;
 			float: left;
 			text-align: center;
+			margin-bottom: 10px;
 			@media screen and (min-width: $tabwidth) {
 				text-align: right;
+				margin-bottom: 0;
 			}
 		}
 		.day {
@@ -158,18 +166,19 @@ header#masthead {
 box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.4);
 }
 .slidetext {
-	width: 90%;
+	width: 100%;
 	position: relative;
-	float: left;
+	// float: left;
+	margin: 0 auto;
 	text-align: center;
-	color: #fff;
 	z-index: 10000;
-	text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+	color: #333;
 
 	h2 {
 		position: relative;
 		z-index: 100000;
-		margin: 20px auto;
+		margin: 10px auto;
+		width: 100%;
 		font: {
 			size: 20px;
 			weight: 700;
@@ -178,6 +187,7 @@ box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.4);
 	p {
 		position: relative;
 		z-index: 100000;
+		width: 100%;
 		font: {
 			size: 14px;
 			weight: 400;
@@ -185,6 +195,11 @@ box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.4);
 	}
 
 	@media screen and (min-width: $tabwidth) {
+		color: #fff;
+		position: absolute;
+		bottom: 0%;
+		background-color: rgba(0,0,0,.5);
+		text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
 		h2 {
 			font-size: 20px;
 		}
@@ -193,8 +208,7 @@ box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.4);
 		}
 	}
 	@media screen and (min-width: $midwidth) {
-		position: absolute;
-		top: 20%;
+		
 		h2 {
 			font-size: 30px;
 		}
@@ -270,7 +284,7 @@ section.blue {
 }
 article.white-box {
 	background-color: rgba(255,255,255,1);
-	width: 94%;
+	width: 100%;
 	padding: 3%;
 	position: relative;
 	margin-bottom: 20px;
@@ -421,6 +435,68 @@ footer.site-footer {
 		@include transition(.3s ease all);
 		&:hover {
 			color: $color-red;
+		}
+	}
+}
+.map {
+	background-color: $color-blue;
+	padding: 10px;
+}
+section.blue-widget {
+	width: 100%;
+	background-color: $color-blue;
+	overflow: hidden;
+	color: #fff;
+	padding: 20px;
+}
+.videos {
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+}
+.video-first {
+	margin: 0 0 30px 0;
+
+	@media screen and (min-width: $tabwidth) {
+		margin: 0 3% 20px 0;
+	}
+}
+.video-last {
+	margin: 0 0 30px 0;
+
+	@media screen and (min-width: $tabwidth) {
+		margin: 0 0 20px 0;
+	}
+}
+.video 	{
+	width: 100%;
+	position: relative;
+	background-color: $color-blue;
+	padding: 2%;
+	@media screen and (min-width: $tabwidth) {
+		width: 31%;
+		float: left;
+	}
+
+	& iframe {
+		width: 100%;
+
+		@media screen and (min-width: $tabwidth) {
+			min-height: 130px;
+		}
+		@media screen and (min-width: $midwidth) {
+			min-height: 170px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			min-height: 250px;
+		}
+	}
+	& h3 {
+		margin: 10px 0 10px 0;
+		color: #fff;
+		font: {
+			size: 20px;
+			weight: 400;
 		}
 	}
 }

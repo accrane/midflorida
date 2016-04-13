@@ -40,6 +40,14 @@
 		}
 	}
 }
+ul.gform_fields li,
+.gform_wrapper form li,
+.gform_wrapper li {
+	list-style: none;
+	border-left-style: solid;
+    border-left-width: 0;
+    border-left-color: #e31d19;
+}
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
