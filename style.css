@@ -2131,7 +2131,7 @@ html[xmlns] .flexslider .slides { display: block; }
 
 @media screen and (min-width: 1060px) { .flex-control-nav { width: 45px; } }
 
-@media screen and (min-width: 1200px) { .flex-control-nav { width: 80px; } }
+@media screen and (min-width: 1200px) { .flex-control-nav { width: 65px; } }
 
 .flex-control-nav li { margin: 0 0 20px 0; float: left; zoom: 1; *display: inline; }
 
