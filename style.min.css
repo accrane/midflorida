@@ -1,4 +1,4 @@
-/*!
+@charset "UTF-8";/*!
 Theme Name: Mid Florida Materials
 Theme URI: http://austincrane.me/
 Author: Austin Crane
@@ -810,11 +810,19 @@ html[xmlns] .flexslider .slides{display:block}
 .single .byline,.group-blog .byline{display:inline}
 .page-content,.entry-content,.entry-summary{margin:1.5em 0 0}
 .entry-content ul{margin:0 0 20px 20px}
-.entry-content li{padding:0 0 0 5px;margin:8px 0;line-height:1;overflow:hidden;border-left-style:solid;border-left-width:2px;border-left-color:#e31d19;list-style:none}
-ul.gform_fields li,.gform_wrapper form li,.gform_wrapper li{list-style:none;border-left-style:solid;border-left-width:0;border-left-color:#e31d19}
+.entry-content li{padding:0 0 0 5px;margin:8px 0;line-height:1;overflow:hidden;list-style:none}
+.entry-content li:before{content:"• ";color:#e31d19}
+.entry-content ul#twocol{overflow:hidden}
+.entry-content ul#twocol li{width:90%}
+@media screen and (min-width:600px){.entry-content ul#twocol li{width:45%;float:left}
+}ul.gform_fields li,.gform_wrapper form li,.gform_wrapper li{list-style:none;border-left-style:solid;border-left-width:0;border-left-color:#e31d19}
 .page-links{clear:both;margin:0 0 1.5em}
 .border{width:100%;margin-top:10px;position:relative;border-top:2px solid #000}
 .border:before{width:100%;content:" ";position:absolute;z-index:-1;top:2px;border:1px solid #000}
+.content-pusher{width:100%;position:relative;height:170px;z-index:40;margin-top:4px}
+.banner{width:100%;position:absolute;z-index:-10}
+.banner img{width:100%}
+.gradient{width:100%;height:100%;position:absolute;bottom:0;z-index:45;background:-webkit-linear-gradient(top,transparent 0,#f0f0ee 87%);background:linear-gradient(to bottom,transparent 0,#f0f0ee 87%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#f0f0ee',GradientType=0)}
 .products-page,.single-product-gallery,.single-service-list-area{width:100%;padding-top:30px}
 .products-page .product,.single-product-gallery .product,.single-service-list-area .product{width:100%}
 .products-page .product img,.single-product-gallery .product img,.single-service-list-area .product img{width:100%}

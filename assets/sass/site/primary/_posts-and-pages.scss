@@ -30,13 +30,27 @@
 		margin: 8px 0 ;
 		line-height: 1;
 		overflow: hidden;
-		border-left: {
-			style: solid;
-			width: 2px;
-			color: $color-red;
-		}
+		// border-left: {
+		// 	style: solid;
+		// 	width: 2px;
+		// 	color: $color-red;
+		// }
 		list: {
 			style: none;
+		}
+	}
+	li:before {
+	    content: "• ";
+	    color: $color-red; /* or whatever color you prefer */
+	}
+	ul#twocol {
+		overflow: hidden;
+		li {
+			width:90%;
+			@media screen and (min-width: $tabwidth) {
+				width :45%;
+				float: left;
+			}
 		}
 	}
 }
@@ -65,6 +79,37 @@ ul.gform_fields li,
 		top: 2px;
 		border: 1px solid #000;
   	}
+}
+.content-pusher {
+	width: 100%;
+	position: relative;
+	height: 170px;
+	z-index: 40;
+	margin-top: 4px;
+	
+}
+.banner {
+	width: 100%;
+	position: absolute;
+	z-index: -10;
+	img {
+		width: 100%;
+	}
+}
+.gradient {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	z-index: 45;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,f0f0ee+87&0+0,1+87 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(240,240,238,1) 87%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(240,240,238,1) 87%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(240,240,238,1) 87%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#f0f0ee',GradientType=0 ); /* IE6-9 */
+
+
+
 }
 .products-page,
 .single-product-gallery,

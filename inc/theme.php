@@ -11,7 +11,7 @@
 /*-------------------------------------
   Images Sizes
 ---------------------------------------*/
-//add_image_size( 'pagelinks', 600, 999, array( 'center', 'center' ) );
+add_image_size( 'banner', 1200, 250, array( 'center', 'center' ) );
 
 /*-------------------------------------
 	Custom client login, link and title.

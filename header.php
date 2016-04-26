@@ -74,9 +74,16 @@
 	</div><!-- wrapper -->
 	</header><!-- #masthead -->
 
-	<div class="wrapper">
-		<div class=" border"></div>
-	</div>
+	<div class=" border"></div>
+
+	<?php if ( has_post_thumbnail() ) { ?>
+		<div class="content-pusher">
+			<div class="banner">
+				<?php the_post_thumbnail('banner'); ?>
+				<div class="gradient"></div>
+			</div>
+		</div>
+	<?php } ?>
 	
 
 	<div id="content" class="site-content">
