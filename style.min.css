@@ -819,7 +819,7 @@ html[xmlns] .flexslider .slides{display:block}
 .page-links{clear:both;margin:0 0 1.5em}
 .border{width:100%;margin-top:10px;position:relative;border-top:2px solid #000}
 .border:before{width:100%;content:" ";position:absolute;z-index:-1;top:2px;border:1px solid #000}
-.content-pusher{width:100%;position:relative;height:170px;z-index:40;margin-top:4px}
+.content-pusher{width:100%;position:relative;height:170px;margin-top:4px}
 .banner{width:100%;position:absolute;z-index:-10}
 .banner img{width:100%}
 .gradient{width:100%;height:100%;position:absolute;bottom:0;z-index:45;background:-webkit-linear-gradient(top,transparent 0,#f0f0ee 87%);background:linear-gradient(to bottom,transparent 0,#f0f0ee 87%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#f0f0ee',GradientType=0)}
