@@ -743,7 +743,7 @@ nav#quicknav li{width:auto;display:inline-block;margin:0}
 .flex-container a:hover,.flex-slider a:hover,.flex-container a:focus,.flex-slider a:focus{outline:0}
 .slides,.slides>li,.flex-control-nav,.flex-direction-nav{margin:0;padding:0;list-style:none}
 .flex-pauseplay span{text-transform:capitalize}
-.flexslider{margin:0;padding:0}
+.flexslider{margin:5px 0 0;padding:0}
 .flexslider .slides>li{display:none;-webkit-backface-visibility:hidden;position:relative}
 .flexslider .slides img{width:100%;display:block}
 .flexslider .slides:after{content:"\0020";display:block;clear:both;visibility:hidden;line-height:0;height:0}
