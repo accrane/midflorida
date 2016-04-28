@@ -873,7 +873,8 @@ article.white-news .link{margin:0;font-weight:400;font-size:16px}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
-header#masthead{border-top:4px solid #000;padding:20px 0 0 0;overflow:hidden}
+@media screen and (min-width:1200px){.site-main{min-height:650px}
+}header#masthead{border-top:4px solid #000;padding:20px 0 0 0;overflow:hidden}
 .header-right-info{width:auto;overflow:hidden;text-align:center}
 @media screen and (min-width:600px){.header-right-info{float:right;width:40%;text-align:right}
 }@media screen and (min-width:930px){.header-right-info{float:right;width:55%}

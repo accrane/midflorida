@@ -7,11 +7,22 @@
  * @package ACStarter
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
-}
 ?>
 
-<aside id="secondary" class=" widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</aside><!-- #secondary -->
+
+	<div class="single-product-side">
+	<h3>Archives</h3>
+<?php $args = array(
+	'type'            => 'monthly',
+	'limit'           => '',
+	'format'          => 'html', 
+	'before'          => '<div class="archive-list">',
+	'after'           => '</div>',
+	'show_post_count' => false,
+	'echo'            => 1,
+	'order'           => 'DESC',
+        'post_type'     => 'post'
+);
+wp_get_archives( $args ); ?>
+</div>
+
