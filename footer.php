@@ -38,6 +38,7 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<?php get_field('google_analytics', 'option') ?>
+<!-- liquid web -->
+<?php the_field('google_analytics', 'option') ?>
 </body>
 </html>
