@@ -60,7 +60,7 @@ get_header(); ?>
 								<h2><?php echo $slideTitle; ?></h2>
 								<p><?php echo $subText; ?></p>
 							</div>
-				      	<img src="<?php echo $largeImage; ?>" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>" />
+				      	<img src="<?php echo $largeImage; ?>" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
 				    	<?php if( $link != '' ) {echo '</a>';} ?>
 				    </li>
 		           
@@ -196,7 +196,7 @@ get_header(); ?>
 
         <div class="home-logo wow zoomIn " data-wow-duration=".5s">
         	<?php if($logoLink != '') {echo '<a href="' . $logoLink . '" target="_blank">';} ?>
-	 			<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>" />
+	 			<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
 	 		<?php if($logoLink != '') {echo '</a>';} ?>
 	 	</div>
 
