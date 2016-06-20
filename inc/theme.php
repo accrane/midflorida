@@ -12,6 +12,7 @@
   Images Sizes
 ---------------------------------------*/
 add_image_size( 'banner', 1200, 250, array( 'center', 'center' ) );
+add_image_size( 'home-banner', 922, 320, array( 'center', 'center' ) );
 
 /*-------------------------------------
 	Custom client login, link and title.

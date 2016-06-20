@@ -46,7 +46,7 @@ get_header(); ?>
 				$title = $image['title'];
 				$alt = $image['alt'];
 				$caption = $image['caption'];
-			 	$size = 'large';
+			 	$size = 'home-banner';
 			 	$thumbnail = 'thumbnail';
 				$thumb = $image['sizes'][ $thumbnail ];
 				$largeImage = $image['sizes'][ $size ];
