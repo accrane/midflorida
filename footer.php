@@ -40,5 +40,13 @@
 <?php wp_footer(); ?>
 <!-- liquid web -->
 <?php the_field('google_analytics', 'option') ?>
+<script>
+window.addEventListener('load',function(){
+if(jQuery('#gform_confirmation_message_3').length > 0 && window.location.href.indexOf('/request-roll-offdumpster-service') != -1){
+jQuery('body').append('<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/859239499/?label=sPpnCPuTu3MQy-jbmQM&guid=ON&script=0"/>');
+}
+});
+</script>
+
 </body>
 </html>
