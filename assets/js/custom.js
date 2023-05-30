@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  *	Custom jQuery Scripts
  *	
@@ -6,91 +8,88 @@
  */
 
 jQuery(document).ready(function ($) {
-	
-	/*
-	*
-	*	Current Page Active
-	*
-	------------------------------------*/
-	$("[href]").each(function() {
+  /*
+  *
+  *	Current Page Active
+  *
+  ------------------------------------*/
+  $("[href]").each(function () {
     if (this.href == window.location.href) {
-        $(this).addClass("active");
-        }
-	});
-	
-	/*
-	*
-	*	Flexslider
-	*
-	------------------------------------*/
-	 // The slider being synced must be initialized first
+      $(this).addClass("active");
+    }
+  });
+
+  /*
+  *
+  *	Flexslider
+  *
+  ------------------------------------*/
+  // The slider being synced must be initialized first
   $('.flexslider').flexslider({
     animation: "slide",
     controlNav: "thumbnails",
-    direction: "vertical", 
+    direction: "vertical",
     smoothHeight: true
   });
-	
-	/*
-	*
-	*	Colorbox
-	*
-	------------------------------------*/
-	$('a.gallery').colorbox({
-		rel:'gal',
-		width: '80%', 
-		height: '80%'
-	});
-	
-	/*
-	*
-	*	Isotope with Images Loaded
-	*
-	------------------------------------*/
-	var $container = $('#gallery').imagesLoaded( function() {
-  	$container.isotope({
-    // options
-	 itemSelector: '.item',
-		  masonry: {
-			gutter: 15
-			}
- 		 });
-	});
 
-	/*
-	*
-	*	Smooth Scroll to Anchor
-	*
-	------------------------------------*/
-	 $('a').click(function(){
-	    $('html, body').animate({
-	        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-	    }, 500);
-	    return false;
-	});
+  /*
+  *
+  *	Colorbox
+  *
+  ------------------------------------*/
+  $('a.gallery').colorbox({
+    rel: 'gal',
+    width: '80%',
+    height: '80%'
+  });
 
-	/*
-	*
-	*	Nice Page Scroll
-	*
-	------------------------------------*/
-	// $(function(){	
-	// 	$("html").niceScroll();
-	// });
-	
-	
-	/*
-	*
-	*	Equal Heights Divs
-	*
-	------------------------------------*/
-	$('.js-blocks').matchHeight();
+  /*
+  *
+  *	Isotope with Images Loaded
+  *
+  ------------------------------------*/
+  var $container = $('#gallery').imagesLoaded(function () {
+    $container.isotope({
+      // options
+      itemSelector: '.item',
+      masonry: {
+        gutter: 15
+      }
+    });
+  });
 
-	/*
-	*
-	*	Wow Animation
-	*
-	------------------------------------*/
-	new WOW().init();
+  /*
+  *
+  *	Smooth Scroll to Anchor
+  *
+  ------------------------------------*/
+  $('a').click(function () {
+    $('html, body').animate({
+      scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+    }, 500);
+    return false;
+  });
 
-});// END #####################################    END
+  /*
+  *
+  *	Nice Page Scroll
+  *
+  ------------------------------------*/
+  // $(function(){	
+  // 	$("html").niceScroll();
+  // });
+
+  /*
+  *
+  *	Equal Heights Divs
+  *
+  ------------------------------------*/
+  $('.js-blocks').matchHeight();
+
+  /*
+  *
+  *	Wow Animation
+  *
+  ------------------------------------*/
+  new WOW().init();
+}); // END #####################################    END
